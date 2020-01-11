@@ -1,0 +1,43 @@
+<head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="piggamecss.css" rel="stylesheet" type="text/css">
+	   
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+                <input type ='text' class = 'winningScore' placeholder = 'Enter Winning Score'  onkeyup="this.value = this.value.replace(/[^0-9]/, '')" >
+            <div class="player-0-panel active">
+				
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">23</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+				
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            
+           <center><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/243004/dice-6.png" alt="Dice" class="dice"></center> 
+           <center><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/243004/dice-6.png" alt="Dice" class="dice2"></center> 
+              
+        </div>
+         <script src="Challenges.js"></script>
+
+    </body>
